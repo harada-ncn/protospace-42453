@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/harada/projects/protospace/spec/models/user_spec.rb:29 :
+
+    [1;34m24[0m:         expect(@user.errors.full_messages).to include([31m[1;31m"[0m[31mEmail can't be blank[1;31m"[0m[31m[0m)
+    [1;34m25[0m:       [32mend[0m
+    [1;34m26[0m:       it [31m[1;31m'[0m[31mユーザーの新規登録には、パスワードが必須であること[1;31m'[0m[31m[0m [32mdo[0m
+    [1;34m27[0m:         @user.password = [31m[1;31m'[0m[31m[1;31m'[0m[31m[0m
+    [1;34m28[0m:         @user.valid?
+ => [1;34m29[0m:         binding.pry
+    [1;34m30[0m:         expect(@user.errors.full_messages).to include([31m[1;31m"[0m[31mNickname can't be blank[1;31m"[0m[31m[0m)
+    [1;34m31[0m:       [32mend[0m
+    [1;34m32[0m:       it [31m[1;31m'[0m[31mユーザーの新規登録には、パスワードは6文字以上であること[1;31m'[0m[31m[0m [32mdo[0m
+    [1;34m33[0m:         @user.password = [31m[1;31m'[0m[31m12345[1;31m'[0m[31m[0m
+    [1;34m34[0m:         @user.password_confirmation= [31m[1;31m'[0m[31m12345[1;31m'[0m[31m[0m
+
