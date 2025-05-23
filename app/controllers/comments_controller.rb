@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
       @prototype= Prototype.find(params[:id])
       @comments = Prototype.find(params[:id]).comments
       @comment = Prototype.find(params[:id]).comments.new
-      render "/prototypes/show"
+      render "prototypes/show"
     end
 
   end
